@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-    
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; 
+  text-decoration: none;
   outline: none;
   border: none;
   text-transform: capitalize;
@@ -20,14 +19,8 @@ html {
 body {
   background: #f7f7f7;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #f7f7f7, #e0e0e0);
 }
-
-
-
-
-
-
-
 
 *::selection {
   background: #2b3dda;
@@ -46,6 +39,8 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
   background: #420177;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* pre loader start */
@@ -473,8 +468,6 @@ header .navbar ul li a:hover {
 }
 /* about media queries ends*/
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Pacifico&family=Fira+Sans:wght@300;400;500&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
 .about .content .title {
     font-family: 'Playfair Display', serif;
@@ -493,8 +486,6 @@ header .navbar ul li a:hover {
     margin-bottom: 8px;
 }
 
-
-
 .content-container {
     text-align: center;
     margin-top: 50px;
@@ -504,11 +495,6 @@ header .navbar ul li a:hover {
     font-size: 24px;
     font-weight: bold;
 }
-
-
-
-
-
 
 .about .content-container {
     display: flex;
@@ -1184,6 +1170,7 @@ header .navbar ul li a:hover {
 
 
 
+
 /* Base styles for the Achievements section */
 .achievements {
     padding: 20px;
@@ -1239,219 +1226,152 @@ header .navbar ul li a:hover {
     }
 }
 
+.special-section {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
 
+.special-section .content {
+    max-width: 100%;
+    margin: auto;
+}
 
+.special-section .hackathon-info h2,
+.special-section .project-highlight h3 {
+    color: #00796b;
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+    transition: color 0.3s, transform 0.3s;
+}
 
+.special-section .hackathon-info h2:hover,
+.special-section .project-highlight h3:hover {
+    color: #004d40;
+    transform: scale(1.05);
+}
 
+.special-section .hackathon-info ul {
+    list-style: none;
+    padding: 0;
+}
 
+.special-section .hackathon-info ul li {
+    background: #b2dfdb;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    transition: background 0.3s, transform 0.3s;
+}
 
+.special-section .hackathon-info ul li:hover {
+    background: #80cbc4;
+    transform: translateX(10px);
+}
 
-       
-    .special-section {
-        font-family: 'Poppins', sans-serif;
-        padding: 20px;
-        background: linear-gradient(145deg, #e0e0e0, #ffffff);
-        border-radius: 12px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-        max-width: 100%;
-        margin: auto;
-        margin-top: 50px;
-    }
+.special-section .hackathon-info ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #004d40;
+}
 
-    .special-section .content {
-        max-width: 100%;
-        margin: auto;
-    }
+.special-section .project-highlight {
+    margin-top: 20px;
+}
 
-    .special-section .hackathon-info h2,
-    .special-section .project-highlight h3 {
-        color: #00796b;
-        margin-bottom: 15px;
-        letter-spacing: 1.2px;
-        transition: color 0.3s, transform 0.3s;
-    }
+.special-section .achievement {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
 
-    .special-section .hackathon-info h2:hover,
-    .special-section .project-highlight h3:hover {
-        color: #004d40;
-        transform: scale(1.05);
-    }
+.special-section .achievement:hover {
+    transform: scale(1.05);
+}
 
-    .special-section .hackathon-info ul {
-        list-style: none;
-        padding: 0;
-    }
+.special-section a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
 
-    .special-section .hackathon-info ul li {
-        background: #b2dfdb;
-        margin-bottom: 7px;
-        padding: 10px 12px;
-        border-radius: 7px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        max-width: 100%;
-        transition: background 0.3s, transform 0.3s;
-    }
+.special-section a:hover {
+    color: #004d40;
+    transform: scale(1.1);
+}
 
-    .special-section .hackathon-info ul li:hover {
-        background: #80cbc4;
-        transform: translateX(10px);
-    }
-
-    .special-section .hackathon-info ul li::before {
-        content: "✔️";
-        margin-right: 10px;
-        color: #004d40;
-    }
-
-    .special-section .project-highlight {
-        margin-top: 20px;
-    }
-
-    .special-section .achievement {
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 100%;
-        transition: transform 0.3s;
-    }
-
-    .special-section .achievement:hover {
-        transform: scale(1.05);
-    }
-
-    .special-section a {
-        color: #00796b;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s, transform 0.3s;
-    }
-
-    .special-section a:hover {
-        color: #004d40;
-        transform: scale(1.1);
-    }
-
-
-  /* achievements  section ends */
+/* achievements  section ends */
 
 /* research */
 
-    .publications {
-        padding: 20px;
-        font-family: 'Poppins', sans-serif;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.publications {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .publications .heading {
-        text-align: center;
-        font-size: 3.8em;
-        color: #00796b;
-        margin-bottom: 20px;
-    }
+.publications .heading {
+    text-align: center;
+    font-size: 3.8em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
 
-    .publication {
-        width: 100%;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        margin-bottom: 30px;
-        text-align: justify;
-    }
+.publication {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
 
-    .publication h2 {
-        font-size: 24px;
-        color: #00796b;
-        margin-bottom: 10px;
-    }
+.publication h2 {
+    font-size: 24px;
+    color: #00796b;
+    margin-bottom: 10px;
+}
 
-    .publication p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
+.publication p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-    .publication a {
-        color: #00796b;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s;
-    }
+.publication a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
 
-    .publication a:hover {
-        color: #004d40;
-    }
+.publication a:hover {
+    color: #004d40;
+}
 
-
-
-
-
- /* research */
+/* research */
 
 .pdf-container .row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-/* .pdf-embed {
-  width: 550px;
-  height: 450px;
-  margin: 0 15px;
-} */
-
-/* Base styles for certification section */
-/* .certifications {
-  padding: 20px;
-  text-align: center;
-}
-
-.certifications .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.certifications .pdf-container {
-  width: 100%;
-}
-
-.certifications .pdf-embed {
-  width: 45%;
-  height: 500px;
-  margin: 10px;
-  border: 1px solid #ccc;
-} */
-
-/* Media Queries for Mobile Devices */
-/* @media only screen and (max-width: 768px) {
-  .certifications .pdf-embed {
-    width: 90%;
-    height: 400px;
-  }
-
-  .certifications .row {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
-
-
-
-
-
 
 .pdf-embed {
   width: 550px;  
@@ -1489,25 +1409,12 @@ header .navbar ul li a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
     .pdf-container {
         height: 80vh; /* Adjust container height for mobile devices */
     }
 }
-
-
-
-
 
 /* contact section starts */
 .contact {
@@ -1665,9 +1572,6 @@ form .button-area {
 }
 /* contact section media queries ends */
 /* contact section ends */
-
-
-
 
 /* footer section starts */
 .footer {
