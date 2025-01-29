@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700&display=swap');
 
 *{
   margin: 0;
@@ -146,14 +146,14 @@ header .navbar ul li a:hover{
 
 /* 404 section start */
 .page_404{ 
-    padding:40px 0; 
+    padding:4rem 0; 
     background:rgb(255, 255, 255);
     margin-top: 6rem;
     min-height: 60vh;
 }
 .wrapper{
   background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-  height: 400px;
+  height: 40rem;
   background-position: center;
 }
 .msg {
@@ -172,7 +172,7 @@ header .navbar ul li a:hover{
     font-weight: 600;
 }
 .wrapper h1{
-  font-size:80px;
+  font-size:8rem;
   text-align: center;
 }
 
