@@ -283,3 +283,24 @@ srtop.reveal('.abachievements .content .resumebtn', { delay: 200 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+/* P9562 */
+function adjustLayout() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.style.marginBottom = '2rem';
+    });
+}
+
+window.addEventListener('resize', adjustLayout);
+window.addEventListener('load', adjustLayout);
+
+/* P338a */
+function optimizePerformance() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.loading = 'lazy';
+    });
+}
+
+window.addEventListener('load', optimizePerformance);

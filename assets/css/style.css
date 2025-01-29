@@ -1709,3 +1709,55 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* P6d6b */
+.experience .container {
+  padding: 10px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.publications .publication {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Pbb56 */
+.experience .container {
+  padding: 10px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.publications .publication {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* P5ac6 */
+@media (max-width: 768px) {
+  .experience .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .publications .publication {
+    width: 100%;
+    padding: 15px;
+  }
+}
