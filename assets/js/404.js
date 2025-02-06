@@ -1,7 +1,9 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', function() {
+    var menu = document.getElementById('menu');
+    var navbar = document.querySelector('.navbar');
 
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
+    menu.addEventListener('click', function() {
+        this.classList.toggle('fa-times');
+        navbar.classList.toggle('nav-toggle');
     });
 });
