@@ -209,7 +209,7 @@ header .navbar ul li a:hover{
 .backbtn .btn:hover{
   background: #1a047e;
 }
-.backbtn .btn:hover i {
+backbtn .btn:hover i {
   transform: translateX(-8px);
 }
 /* 404 section end */
